@@ -3,50 +3,724 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gilbert Tan - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+
+    <title>TEACH Classroom Management System</title>
+
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <div class="logo">
-                <a href="index.html">Gilbert Tan</a>
-            </div>
-            <nav>
-                <a href="index.html" class="nav-link active">Home</a>
-                <a href="teach.html" class="nav-link">TEACH Project</a>
-                <a href="skills.html" class="nav-link">Skills</a>
-                <a href="contact.html" class="nav-link">Contact</a>
-            </nav>
-        </div>
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="#home" class="logo">TEACH CMS</a>
+
+            <button
+                class="menu-button"
+                id="menuButton"
+                aria-label="Open navigation menu">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#teach-project">TEACH Project</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <div class="container">
-            <section class="hero">
-                <div class="hero-content">
-                    <h1>Hello, I'm Gilbert Madrazo <span class="hero-highlight">Tan</span></h1>
-                    <p>A passionate Computer Science Teacher and Full-Stack Developer, building innovative solutions for real-world problems.</p>
-                </div>
-            </section>
 
-            <section id="about">
-                <h2>About Me</h2>
+        <!-- Home Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <p class="eyebrow">Classroom Management System</p>
+
+                <h1>TEACH</h1>
+
+                <h2>
+                    A flexible digital classroom management system for
+                    teachers and students
+                </h2>
+
                 <p>
-                    Hello! I'm Gilbert Madrazo Tan, a passionate and dedicated Computer Science Teacher teaching Cambridge Program with a strong foundation in Python and Database Management.
-                    I thrive on building innovative solutions that address real-world problems. My capstone project, "TEACH", is a testament to my commitment to leveraging technology for social good, particularly in educational settings challenged by unreliable internet access.
-                    I possess strong problem-solving skills, a keen eye for detail, and a collaborative spirit. I am constantly learning and adapting to new technologies to deliver high-quality, impactful software.
-                    <br><br>
-                    I am actively seeking opportunities where I can apply my skills in front-end development and back-end architecture, full-stack engineering to contribute to meaningful projects and grow within a dynamic team.
+                    TEACH brings classroom tools, learning resources,
+                    student participation, classroom behavior, rankings,
+                    activities, and presentations into one organized
+                    educational platform.
                 </p>
-                
-                <img src="blob.jpeg" alt="Gilbert Madrazo Tan - Profile Picture" style="display: block; margin: 25px auto; max-width: 200px; border-radius: 50%; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);">
-            </section>
-        </div>
+
+                <a href="#teach-project" class="primary-button">
+                    Explore the TEACH Project
+                </a>
+            </div>
+        </section>
+
+        <!-- TEACH Project Section -->
+        <section id="teach-project" class="project-section">
+            <div class="container">
+
+                <p class="eyebrow">Featured Educational Technology Project</p>
+
+                <h2>TEACH Classroom Management System</h2>
+
+                <p class="project-introduction">
+                    TEACH is an interactive classroom management system
+                    designed to support teachers before, during, and after
+                    classroom activities. Instead of depending on several
+                    unrelated applications, teachers can use TEACH to organize
+                    their classes, manage learning materials, conduct
+                    activities, present content, monitor behavior, and
+                    encourage student participation from one central platform.
+                </p>
+
+                <p class="project-introduction">
+                    The system is also designed with online and offline
+                    usability in mind. Materials and data that have already
+                    been stored in TEACH can remain accessible even when the
+                    device temporarily loses internet connectivity. This
+                    makes the platform useful in classrooms where internet
+                    access may be limited or unreliable.
+                </p>
+
+                <!-- Project Information -->
+                <div class="project-information">
+
+                    <div class="information-card">
+                        <h3>Project Purpose</h3>
+                        <p>
+                            TEACH provides teachers with a centralized
+                            workspace for planning lessons, managing student
+                            rosters, conducting classroom activities, sharing
+                            resources, and monitoring student participation.
+                        </p>
+                    </div>
+
+                    <div class="information-card">
+                        <h3>Designed for Teachers</h3>
+                        <p>
+                            The system gives teachers practical tools for
+                            maintaining classroom authority, selecting
+                            students, managing time, presenting resources, and
+                            organizing student performance.
+                        </p>
+                    </div>
+
+                    <div class="information-card">
+                        <h3>Designed for Students</h3>
+                        <p>
+                            Students can participate in activities, view their
+                            current points, understand their class standing,
+                            and remain engaged through an interactive
+                            classroom experience.
+                        </p>
+                    </div>
+
+                    <div class="information-card">
+                        <h3>Online and Offline Support</h3>
+                        <p>
+                            Files and data already saved in the system can be
+                            accessed and used even when the device is offline.
+                            This helps teachers continue classroom activities
+                            without depending entirely on a live connection.
+                        </p>
+                    </div>
+
+                    <div class="information-card">
+                        <h3>Interactive Classroom Control</h3>
+                        <p>
+                            TEACH supports real-time classroom interaction
+                            through behavior points, avatar controls,
+                            random name selection, countdown activities, and
+                            student rankings.
+                        </p>
+                    </div>
+
+                    <div class="information-card">
+                        <h3>Centralized Organization</h3>
+                        <p>
+                            Classes, students, instructional materials,
+                            presentations, activities, and performance
+                            information are organized in one accessible
+                            educational system.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Embedded Video -->
+                <div class="project-video">
+                    <h3>Project Demonstration</h3>
+
+                    <p>
+                        Watch the demonstration to see how TEACH can be used
+                        to manage classroom activities, present educational
+                        resources, and support student engagement.
+                    </p>
+
+                    <div class="video-container">
+                        <!-- Correct YouTube embed format -->
+                        <iframe
+                            src="https://www.youtube.com/embed/eLpoIS4-0sU"
+                            title="TEACH Classroom Management System Demonstration"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <p class="video-note">
+                        The demonstration video presents the primary
+                        functions and classroom workflow of the TEACH system.
+                    </p>
+                </div>
+
+                <!-- Features and Screenshots -->
+                <div class="screenshots-section">
+                    <p class="eyebrow">Platform Features</p>
+
+                    <h3>TEACH Features and System Screenshots</h3>
+
+                    <p>
+                        The following features show how TEACH supports
+                        classroom organization, resource management,
+                        interactive learning, student monitoring, and
+                        teacher-led presentations.
+                    </p>
+
+                    <!-- Feature 1 -->
+                    <article class="feature-card">
+                        <div class="feature-image">
+                            <img
+                                src="./images/login.png"
+                                alt="TEACH login and welcome interface">
+                        </div>
+
+                        <div class="feature-details">
+                            <p class="feature-number">01</p>
+
+                            <h4>Login and Welcome Interface</h4>
+
+                            <p>
+                                The login page serves as the main welcome
+                                interface of TEACH. It provides users with an
+                                organized entry point into the system and
+                                establishes a clear separation between the
+                                public welcome experience and the classroom
+                                management workspace.
+                            </p>
+
+                            <p>
+                                After signing in, teachers can access the tools
+                                required to manage classes, students,
+                                materials, presentations, activities, and
+                                classroom performance.
+                            </p>
+
+                            <ul>
+                                <li>Welcomes users to the TEACH platform</li>
+                                <li>Provides secure access to the system</li>
+                                <li>Leads teachers to their classroom tools</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Feature 2 -->
+                    <article class="feature-card reverse">
+                        <div class="feature-image">
+                            <img
+                                src="./images/dashboard.png"
+                                alt="TEACH classroom management dashboard">
+                        </div>
+
+                        <div class="feature-details">
+                            <p class="feature-number">02</p>
+
+                            <h4>Dashboard</h4>
+
+                            <p>
+                                The dashboard is the main interface of the
+                                TEACH website tool. It acts as the teacher's
+                                central command center, bringing the most
+                                important classroom functions together in one
+                                place.
+                            </p>
+
+                            <p>
+                                From the dashboard, teachers can quickly
+                                navigate to their selected class, manage
+                                student information, open stored materials,
+                                start classroom activities, cast content,
+                                control timers, use the name picker, and
+                                review student rankings.
+                            </p>
+
+                            <p>
+                                By presenting the system's major functions in
+                                an organized layout, the dashboard reduces
+                                unnecessary navigation and helps teachers
+                                transition smoothly between different parts of
+                                a lesson.
+                            </p>
+
+                            <ul>
+                                <li>Central access point for TEACH features</li>
+                                <li>Organized classroom navigation</li>
+                                <li>Quick access to activities and resources</li>
+                                <li>Supports efficient lesson management</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Feature 3 -->
+                    <article class="feature-card">
+                        <div class="feature-image">
+                            <img
+                                src="./images/class-selection.png"
+                                alt="TEACH class selection interface">
+                        </div>
+
+                        <div class="feature-details">
+                            <p class="feature-number">03</p>
+
+                            <h4>Class Selection</h4>
+
+                            <p>
+                                The class-selection feature allows teachers to
+                                choose the correct class before beginning
+                                classroom activities. This helps ensure that
+                                the active student roster, points, rankings,
+                                and classroom records all correspond to the
+                                intended class.
+                            </p>
+
+                            <p>
+                                Selecting the correct class is especially
+                                important when a teacher handles multiple
+                                sections or grade levels. It helps prevent
+                                student information and performance points
+                                from being recorded under the wrong roster.
+                            </p>
+
+                            <ul>
+                                <li>Choose the active class or section</li>
+                                <li>Load the correct student roster</li>
+                                <li>Keep rankings connected to the correct class</li>
+                                <li>Reduce classroom record errors</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Feature 4 -->
+                    <article class="feature-card reverse">
+                        <div class="feature-image">
+                            <img
+                                src="./images/student-management.png"
+                                alt="TEACH student and class management interface">
+                        </div>
+
+                        <div class="feature-details">
+                            <p class="feature-number">04</p>
+
+                            <h4>Student and Class Management</h4>
+
+                            <p>
+                                Student Management allows teachers to create
+                                and organize classes, maintain student
+                                rosters, and keep classroom records updated.
+                                Teachers can add new classes and students
+                                whenever necessary.
+                            </p>
+
+                            <p>
+                                The feature also supports changes in student
+                                placement. Students can be moved from one
+                                class to another when needed, such as when
+                                schedules or sections change. Teachers can
+                                also remove students who transfer out of the
+                                school or are no longer part of the class.
+                            </p>
+
+                            <ul>
+                                <li>Add and manage classroom sections</li>
+                                <li>Create and update student rosters</li>
+                                <li>Move students between classes</li>
+                                <li>Remove students who transfer out</li>
+                                <li>Maintain accurate classroom records</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Feature 5 -->
+                    <article class="feature-card">
+                        <div class="feature-image">
+                            <img
+                                src="./images/Library.png"
+                                alt="TEACH local library for uploaded files">
+                        </div>
+
+                        <div class="feature-details">
+                            <p class="feature-number">05</p>
+
+                            <h4>Library</h4>
+
+                            <p>
+                                The Library allows teachers to upload PDFs,
+                                files, documents, and other classroom data into
+                                TEACH. These resources are stored locally
+                                within the system so that teachers can access
+                                them when preparing or conducting lessons.
+                            </p>
+
+                            <p>
+                                Because stored resources can be accessed with
+                                or without internet connectivity, teachers can
+                                continue using important classroom materials
+                                even when the connection is unavailable.
+                            </p>
+
+                            <ul>
+                                <li>Upload PDFs, files, and classroom data</li>
+                                <li>Store instructional resources locally</li>
+                                <li>Access materials online or offline</li>
+                                <li>Keep teaching resources organized</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Feature 6 -->
+                    <article class="feature-card reverse">
+                        <div class="feature-image">
+                            <img
+                                src="./images/active-library.png"
+                                alt="TEACH active library materials on the homepage">
+                        </div>
+
+                        <div class="feature-details">
+                            <p class="feature-number">06</p>
+
+                            <h4>Active Library</h4>
+
+                            <p>
+                                The Active Library displays materials that have
+                                already been uploaded by the teacher and are
+                                currently available for classroom use. It
+                                functions as a working collection of resources
+                                that can be accessed directly from the TEACH
+                                homepage.
+                            </p>
+
+                            <p>
+                                Teachers can use these materials during online
+                                or offline classroom sessions. The Active
+                                Library makes frequently used resources easier
+                                to locate, reducing the time spent searching
+                                through stored files during a lesson.
+                            </p>
+
+                            <ul>
+                                <li>Shows teacher-uploaded materials</li>
+                                <li>Accessible from the TEACH homepage</li>
+                                <li>Supports online and offline use</li>
+                                <li>Provides quick access to active resources</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Feature 7 -->
+                    <article class="feature-card">
+                        <div class="feature-image">
+                            <img
+                                src="./images/Casting.png"
+                                alt="TEACH casting feature for classroom presentations">
+                        </div>
+
+                        <div class="feature-details">
+                            <p class="feature-number">07</p>
+
+                            <h4>Casting</h4>
+
+                            <p>
+                                Casting allows teachers to use files and data
+                                that are already stored in TEACH and display
+                                them through the TEACH website. Once the
+                                required content has been saved in the system,
+                                it can continue to work whether the device is
+                                online or offline.
+                            </p>
+
+                            <p>
+                                Teachers can also cast videos and other media
+                                for classroom presentations. This allows
+                                lessons, demonstrations, reference materials,
+                                and visual content to be presented in an
+                                organized way without repeatedly searching for
+                                external resources.
+                            </p>
+
+                            <ul>
+                                <li>Display stored files and classroom data</li>
+                                <li>Supports online and offline presentations</li>
+                                <li>Allows videos to be cast for lessons</li>
+                                <li>Helps teachers present content efficiently</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Feature 8 -->
+                    <article class="feature-card reverse">
+                        <div class="feature-image">
+                            <img
+                                src="./images/behavior-management.png"
+                                alt="TEACH behavior management and student points interface">
+                        </div>
+
+                        <div class="feature-details">
+                            <p class="feature-number">08</p>
+
+                            <h4>Behavior Management</h4>
+
+                            <p>
+                                Behavior Management allows teachers to award
+                                and deduct points from students based on
+                                classroom participation, conduct, cooperation,
+                                and completion of activities. This gives
+                                teachers a consistent way to recognize positive
+                                behavior and respond to classroom concerns.
+                            </p>
+
+                            <p>
+                                The feature also gives teachers authority over
+                                student avatars inside the classroom
+                                environment. Teachers can silence an avatar
+                                when necessary to represent classroom
+                                authority and restore the avatar's status when
+                                the student is permitted to participate again.
+                            </p>
+
+                            <ul>
+                                <li>Award points for positive behavior</li>
+                                <li>Deduct points when classroom rules are broken</li>
+                                <li>Silence student avatars when necessary</li>
+                                <li>Restore avatar status when appropriate</li>
+                                <li>Support structured classroom discipline</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Feature 9 -->
+                    <article class="feature-card">
+                        <div class="feature-image">
+                            <img
+                                src="./images/ranking-system.png"
+                                alt="TEACH student ranking system">
+                        </div>
+
+                        <div class="feature-details">
+                            <p class="feature-number">09</p>
+
+                            <h4>Ranking System</h4>
+
+                            <p>
+                                The Ranking System allows students to see
+                                their current standing in the class based on
+                                the points they have earned. It provides
+                                students with a visible indication of their
+                                participation and classroom performance.
+                            </p>
+
+                            <p>
+                                Rankings are connected to the selected class
+                                roster, ensuring that students are compared
+                                only with the correct group. The feature can
+                                encourage motivation, participation, healthy
+                                competition, and awareness of individual
+                                progress.
+                            </p>
+
+                            <ul>
+                                <li>Displays students' current points</li>
+                                <li>Shows class standing and rankings</li>
+                                <li>Encourages participation and motivation</li>
+                                <li>Reflects the active class roster</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Feature 10 -->
+                    <article class="feature-card reverse">
+                        <div class="feature-image">
+                            <img
+                                src="./images/countdown.png"
+                                alt="TEACH classroom activity countdown timer">
+                        </div>
+
+                        <div class="feature-details">
+                            <p class="feature-number">10</p>
+
+                            <h4>Countdown Timer</h4>
+
+                            <p>
+                                The Countdown feature helps teachers manage
+                                the duration of classroom activities. Teachers
+                                can set a time limit using minutes and seconds,
+                                while students can clearly see how much time
+                                remains.
+                            </p>
+
+                            <p>
+                                This makes activities more structured and helps
+                                students stay aware of deadlines. The timer
+                                can be used for individual tasks, group work,
+                                quizzes, discussions, preparation periods, and
+                                other timed classroom exercises.
+                            </p>
+
+                            <ul>
+                                <li>Set activity times in minutes and seconds</li>
+                                <li>Shows remaining time to students</li>
+                                <li>Supports timed individual or group activities</li>
+                                <li>Helps maintain lesson pacing</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Feature 11 -->
+                    <article class="feature-card">
+                        <div class="feature-image">
+                            <img
+                                src="./images/name-picker.png"
+                                alt="TEACH random student name picker">
+                        </div>
+
+                        <div class="feature-details">
+                            <p class="feature-number">11</p>
+
+                            <h4>Random Name Picker</h4>
+
+                            <p>
+                                The Name Picker allows teachers to randomly
+                                select students to answer questions,
+                                participate in discussions, demonstrate a
+                                solution, or complete a classroom activity.
+                            </p>
+
+                            <p>
+                                Random selection promotes fairness and gives
+                                every student an opportunity to participate.
+                                It can also help teachers avoid repeatedly
+                                calling on the same students and encourage
+                                greater attention throughout the lesson.
+                            </p>
+
+                            <ul>
+                                <li>Select students randomly</li>
+                                <li>Support fair classroom participation</li>
+                                <li>Use for questions and activities</li>
+                                <li>Encourage students to remain attentive</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- Project Summary -->
+                <div class="project-summary">
+                    <h3>Project Summary</h3>
+
+                    <p>
+                        TEACH combines classroom organization, resource
+                        management, interactive activities, behavior
+                        monitoring, student rankings, and teacher presentation
+                        tools in one educational platform. Its online and
+                        offline capabilities allow teachers to continue using
+                        previously stored materials and data even when internet
+                        access is unavailable.
+                    </p>
+
+                    <p>
+                        By connecting teacher controls with student
+                        participation, TEACH creates a more organized,
+                        interactive, and manageable classroom environment.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <p class="eyebrow">About the Project</p>
+
+                <h2>About TEACH</h2>
+
+                <p>
+                    TEACH was developed as a technology-based solution for
+                    improving classroom organization, participation, and
+                    instructional delivery. The platform focuses on the needs
+                    of teachers who require accessible tools for managing
+                    classroom information, resources, activities, and student
+                    behavior.
+                </p>
+
+                <p>
+                    Through its integrated features, TEACH supports both
+                    traditional classroom management and interactive
+                    technology-assisted learning. It helps teachers maintain
+                    control of classroom activities while giving students
+                    clear opportunities to participate, monitor their points,
+                    and understand their progress.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <p class="eyebrow">Get in Touch</p>
+
+                <h2>Contact</h2>
+
+                <p>
+                    For more information about the TEACH Classroom Management
+                    System, its features, or its development, please contact
+                    the project developer.
+                </p>
+
+                <a
+                    href="mailto:your-email@example.com"
+                    class="primary-button">
+                    Send an Email
+                </a>
+            </div>
+        </section>
+
     </main>
 
-    <footer>
-        <p>Gilbert Tan &copy; 2026</p>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>
+            © 2026 TEACH Classroom Management System. All rights reserved.
+        </p>
     </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const menuButton = document.getElementById("menuButton");
+        const navLinks = document.getElementById("navLinks");
+
+        menuButton.addEventListener("click", function () {
+            navLinks.classList.toggle("show");
+        });
+
+        document.querySelectorAll(".nav-links a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                navLinks.classList.remove("show");
+            });
+        });
+    </script>
+
 </body>
 </html>
