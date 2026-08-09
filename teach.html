@@ -1,0 +1,233 @@
+<!-- teach.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEACH Project - Gilbert Tan's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Gilbert Tan's</span> Portfolio</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li class="current"><a href="teach.html">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="teach-project" class="container">
+        <h2>TEACH: Local-First Classroom Management System</h2>
+
+        <div class="project-detail-section">
+            <h3>Problem Statement</h3>
+            <p>
+                In many educational environments, unreliable or non-existent internet connectivity severely limits the effectiveness of digital learning tools and classroom management applications. Teachers often struggle with real-time data entry, behavior tracking, and access to student records when an internet connection cannot be guaranteed. This digital divide hinders efficient classroom operations and equitable access to modern educational resources.
+            </p>
+        </div>
+
+        <div class="project-detail-section">
+    <h3>My Role & Work</h3>
+    <ul>
+        <li><strong>Sole Full-Stack Developer</strong>: Independently designed, developed, tested, and deployed the TEACH application from concept to implementation.</li>
+        <li><strong>Project Planning & System Design</strong>: Defined the project goals, core features, user workflows, and overall system architecture based on the need for a reliable classroom management tool.</li>
+        <li><strong>Local-First Architecture</strong>: Designed the application to support reliable use even when internet connectivity is limited or unavailable, helping teachers continue classroom tasks without disruption.</li>
+        <li><strong>Front-End Development</strong>: Built the user interface with a focus on simplicity, responsiveness, and ease of use for teachers managing classroom records and student information.</li>
+        <li><strong>Back-End Development</strong>: Developed the server-side functionality needed to handle application data, support user interactions, and manage communication between the client and server.</li>
+        <li><strong>Data Management</strong>: Implemented structured data handling for classroom records, student information, behavior tracking, and other teaching-related features.</li>
+        <li><strong>Testing & Debugging</strong>: Tested the application across different scenarios, identified issues, and resolved bugs related to functionality, deployment, service workers, caching, and user experience.</li>
+        <li><strong>Deployment & Maintenance</strong>: Deployed the application to Heroku, configured the project for public access, and continued refining the system based on testing results and technical requirements.</li>
+        <li><strong>Documentation & Portfolio Integration</strong>: Prepared supporting materials including screenshots, project descriptions, technical explanations, and portfolio content to clearly present the purpose and impact of TEACH.</li>
+    </ul>
+</div>
+
+        <div class="project-detail-section">
+            <h3>Solution: TEACH - Empowering Educators, Locally.</h3>
+            <p>
+                TEACH (Teachers' Educational Assistant for Classroom Harmony) is an innovative classroom management system designed with a **local-first approach**. It prioritizes offline functionality, allowing teachers to manage student behavior, track progress, and record data even without an active internet connection. Data is stored robustly on the local device using IndexedDB and intelligently synchronizes with a central server (or other peer devices) when connectivity is restored, minimizing disruption and ensuring data integrity. This makes TEACH an ideal solution for schools in remote areas or those with intermittent internet access.
+            </p>
+        </div>
+
+        <div class="project-detail-section">
+            <h3>Key Features</h3>
+            <ul>
+                <li>**Offline-First Data Entry:** Seamlessly record student behavior, attendance, and notes without an internet connection.</li>
+                <li>**Real-time Local Sync:** Instantaneous updates across all teacher devices within the same local network via WebSockets.</li>
+                <li>**Student Behavior Management:** Customizable behavior tracking and reporting tools.</li>
+                <li>**Class Records & Analytics:** Centralized system for grades, assignments, and student performance insights.</li>
+                <li>**User Authentication:** Secure login and role-based access for teachers and administrators.</li>
+                <li>**Responsive User Interface:** Accessible and functional on various devices (desktops, tablets).</li>
+            </ul>
+        </div>
+
+        <div class="project-detail-section">
+            <h3>Technologies Used</h3>
+            <ul>
+                <li>**Frontend:** JavaScript, TypeScript, React.js, HTML5, CSS3</li>
+                <li>**Backend:** Node.js, Express.js</li>
+                <li>**Database:** IndexedDB (Client-side), [PostgreSQL]</li>
+                <li>**Real-time Communication:** WebSockets</li>
+                <li>**Version Control:** Git, GitHub</li>
+                <li>**Deployment:** Heroku</li>
+                <li>**Other Tools:** npm, Webpack, Babel</li>
+            </ul>
+        </div>
+
+        <div class="project-detail-section">
+            <h3>Challenges & Learnings</h3>
+            <ul>
+                <li>**Complex Data Synchronization:** Overcoming the intricacies of managing eventual consistency and conflict resolution in a local-first, offline-capable application was a significant challenge. I learned to implement robust versioning strategies and sophisticated merge algorithms.</li>
+                <li>**Real-time Offline Communication:** Designing a WebSocket-based system that functions effectively on a local network without relying on external servers for peer discovery proved challenging. This pushed me to explore mDNS and other local network discovery protocols.</li>
+                <li>**Performance Optimization for IndexedDB:** Handling large datasets efficiently within the browser's IndexedDB required careful schema design and index optimization to ensure a smooth user experience.</li>
+                <li>**Deployment and Scalability:** Configuring a multi-service application (frontend, backend, potentially a separate WebSocket server) for deployment on platforms like Heroku presented learning opportunities in service orchestration and environment configuration.</li>
+            </ul>
+        </div>
+
+        <div class="project-detail-section">
+            <h3>Outcomes & Impact</h3>
+            <ul>
+                <li>**Enhanced Classroom Efficiency:** TEACH empowers teachers to maintain seamless operations regardless of internet availability, saving significant time on administrative tasks.</li>
+                <li>**Improved Data Accuracy:** Local-first design minimizes data loss and ensures consistency, leading to more reliable student records.</li>
+                <li>**Accessibility in Underserved Areas:** Provides a viable digital solution for schools and educators in regions with limited or no internet infrastructure.</li>
+                <li>**[Quantifiable Metric 1, e.g., 90% Uptime]**: Achieved near 100% uptime for core functionalities even during complete internet outages in pilot tests.</li>
+                <li>**[Quantifiable Metric 2, e.g., Reduced Admin Time]**: Projected to reduce daily administrative time for teachers by X hours/week, allowing more focus on teaching.</li>
+            </ul>
+        </div>
+
+       <div class="project-detail-section">
+    <h3>TEACH Screenshots & Feature Demonstrations</h3>
+    <p>
+        The following screenshots demonstrate the main features of TEACH, including user authentication,
+        classroom setup, student roster management, behavior tracking, learning materials, classroom tools,
+        casting features, and report generation.
+    </p>
+
+    <div class="project-deliverables">
+
+        <div>
+            <img src="images/Login Screen.png" alt="TEACH login and registration screen">
+            <h4>Login and Registration</h4>
+            <p>
+                This screen allows users to log in or register for an account before accessing the TEACH platform.
+                It provides the starting point for secure access to the classroom management system.
+            </p>
+        </div>
+
+        <div>
+            <img src="images/Homepage.png" alt="TEACH homepage after user login">
+            <h4>Homepage</h4>
+            <p>
+                The homepage appears after a successful login and serves as the main dashboard where teachers can
+                access classroom tools, records, learning materials, and other TEACH features.
+            </p>
+        </div>
+
+        <div>
+            <img src="images/Class Record & Roster.png" alt="TEACH class record and roster management screen">
+            <h4>Class Record & Roster</h4>
+            <p>
+                This feature allows teachers to create classes, add students, and manage class rosters. It helps
+                organize learners by class and supports structured classroom record keeping.
+            </p>
+        </div>
+
+        <div>
+            <img src="images/Selecting Class.png" alt="TEACH selecting class screen showing created class with roster">
+            <h4>Selecting Class</h4>
+            <p>
+                This screen shows that a class has been successfully created and can be selected. It confirms that
+                the class roster is available and ready for classroom activities and record management.
+            </p>
+        </div>
+
+        <div>
+            <img src="images/Behavior Management.png" alt="TEACH behavior management screen for adding and deducting points">
+            <h4>Behavior Management</h4>
+            <p>
+                The behavior management feature allows teachers to add or deduct points from students based on
+                classroom behavior. It also includes options such as silence and restore to support classroom discipline
+                and participation tracking.
+            </p>
+        </div>
+
+        <div>
+            <img src="images/Library.png" alt="TEACH library screen for uploading PDF files and learning materials">
+            <h4>Library</h4>
+            <p>
+                The library allows teachers to upload PDFs and other learning materials. This gives teachers a central
+                place to store instructional resources for classroom use.
+            </p>
+        </div>
+
+        <div>
+            <img src="images/Name Picker.png" alt="TEACH name picker feature for random student selection">
+            <h4>Name Picker</h4>
+            <p>
+                The name picker randomly selects students from the class roster. This can be used for recitation,
+                participation, activities, or group classroom engagement.
+            </p>
+        </div>
+
+        <div>
+            <img src="images/Timer.png" alt="TEACH timer feature for classroom activities">
+            <h4>Timer</h4>
+            <p>
+                The timer helps teachers manage classroom activities by setting a specific amount of time for tasks,
+                exercises, discussions, or assessments.
+            </p>
+        </div>
+
+        <div>
+            <img src="images/Countdown Timer.png" alt="TEACH animated countdown timer feature">
+            <h4>Countdown Timer</h4>
+            <p>
+                The countdown timer provides a visual animated timer that can be used during classroom activities.
+                It helps students stay aware of the remaining time for a task.
+            </p>
+        </div>
+
+        <div>
+            <img src="images/Active Library.png" alt="TEACH active library screen showing available learning materials">
+            <h4>Active Library</h4>
+            <p>
+                The active library displays the available uploaded materials that teachers can access and use during
+                lessons. It shows which resources are ready for classroom presentation or distribution.
+            </p>
+        </div>
+
+        <div>
+            <img src="images/Casting.png" alt="TEACH casting feature for presenting files and online videos">
+            <h4>Casting</h4>
+            <p>
+                The casting feature allows teachers to present files and online videos for classroom viewing. This
+                supports digital instruction by making learning materials easier to share with students.
+            </p>
+        </div>
+
+        <div>
+            <img src="images/report CSV.png" alt="TEACH CSV report for student grades scores and class records">
+            <h4>Report CSV</h4>
+            <p>
+                The report CSV feature generates reports for student grades, scores, and class records. This helps
+                teachers organize academic performance data for each student and their respective classes.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+    </section>
+
+    <footer>
+        <p>Your Name &copy; 2024</p>
+    </footer>
+</body>
+</html>
