@@ -1,170 +1,88 @@
-<!-- teach.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEACH Project - Gilbert Tan Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>TEACH Project | Gilbert Tan</title>
+  <meta name="description" content="TEACH is a local-first classroom management system designed to support teachers even during unreliable internet conditions." />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <div id="branding">
-                <h1><span class="highlight">Gilbert Tan's</span> Portfolio</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">About</a></li>
-                    <li class="current"><a href="teach.html">Projects</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html">Gilbert Tan</a>
+      </div>
 
-    <section id="teach-project" class="container">
-        <h2>TEACH: Local-First Classroom Management System</h2>
-
-        <div class="project-detail-section">
-            <h3>Problem Statement</h3>
-            <p>
-                In many educational environments, unreliable or non-existent internet connectivity severely limits the effectiveness of digital learning tools and classroom management applications. Teachers often struggle with real-time data entry, behavior tracking, and access to student records when an internet connection cannot be guaranteed. This digital divide hinders efficient classroom operations and equitable access to modern educational resources.
-            </p>
-        </div>
-
-        <div class="project-detail-section">
-    <h3>My Role & Work</h3>
-    <ul>
-        <li><strong>Sole Full-Stack Developer</strong>: Independently designed, developed, tested, and deployed the TEACH application from concept to implementation.</li>
-        <li><strong>Project Planning & System Design</strong>: Defined the project goals, core features, user workflows, and overall system architecture based on the need for a reliable classroom management tool.</li>
-        <li><strong>Local-First Architecture</strong>: Designed the application to support reliable use even when internet connectivity is limited or unavailable, helping teachers continue classroom tasks without disruption.</li>
-        <li><strong>Front-End Development</strong>: Built the user interface with a focus on simplicity, responsiveness, and ease of use for teachers managing classroom records and student information.</li>
-        <li><strong>Back-End Development</strong>: Developed the server-side functionality needed to handle application data, support user interactions, and manage communication between the client and server.</li>
-        <li><strong>Data Management</strong>: Implemented structured data handling for classroom records, student information, behavior tracking, and other teaching-related features.</li>
-        <li><strong>Testing & Debugging</strong>: Tested the application across different scenarios, identified issues, and resolved bugs related to functionality, deployment, service workers, caching, and user experience.</li>
-        <li><strong>Deployment & Maintenance</strong>: Deployed the application to Heroku, configured the project for public access, and continued refining the system based on testing results and technical requirements.</li>
-        <li><strong>Documentation & Portfolio Integration</strong>: Prepared supporting materials including screenshots, project descriptions, technical explanations, and portfolio content to clearly present the purpose and impact of TEACH.</li>
-    </ul>
-</div>
-
-       <div class="project-detail-section">
-    <h3>TEACH Screenshots & Feature Demonstrations</h3>
-    <p>
-        The following screenshots demonstrate the main features of TEACH, including user authentication,
-        classroom setup, student roster management, behavior tracking, learning materials, casting tools,
-        ranking, and classroom activity features.
-    </p>
-
-    <div class="project-deliverables">
-
-        <div>
-            <img src="Login Screen.png" alt="TEACH login and registration screen">
-            <h4>Login and Registration</h4>
-            <p>
-                This screen allows users to log in or register for an account before accessing the TEACH platform.
-                It provides the starting point for secure access to the classroom management system.
-            </p>
-        </div>
-
-        <div>
-            <img src="Homepage.png" alt="TEACH homepage after user login">
-            <h4>Homepage</h4>
-            <p>
-                The homepage appears after a successful login and serves as the main dashboard where teachers can
-                access classroom tools, records, learning materials, and other TEACH features.
-            </p>
-        </div>
-
-        <div>
-            <img src="Class Record & Roster.png" alt="TEACH class record and roster management screen">
-            <h4>Class Record & Roster</h4>
-            <p>
-                This feature allows teachers to create classes, add students, and manage class rosters. It helps
-                organize learners by class and supports structured classroom record keeping.
-            </p>
-        </div>
-
-        <div>
-            <img src="Selecting Class.png" alt="TEACH selecting class screen showing a created class with roster">
-            <h4>Selecting Class</h4>
-            <p>
-                This screen shows that a class has been successfully created and can be selected. It confirms that
-                the class roster is available and ready for classroom activities and record management.
-            </p>
-        </div>
-
-        <div>
-            <img src="Behavior Management.png" alt="TEACH behavior management screen for adding and deducting student points">
-            <h4>Behavior Management</h4>
-            <p>
-                The behavior management feature allows teachers to add or deduct points from students based on
-                classroom behavior. It also supports classroom control features such as silence and restore.
-            </p>
-        </div>
-
-        <div>
-            <img src="Library.png" alt="TEACH library screen for uploading PDF files and learning materials">
-            <h4>Library</h4>
-            <p>
-                The library allows teachers to upload PDFs and learning materials. This gives teachers a central
-                place to store instructional resources for classroom use.
-            </p>
-        </div>
-
-        <div>
-            <img src="Active Library.png" alt="TEACH active library screen showing available learning materials">
-            <h4>Active Library</h4>
-            <p>
-                The active library displays available uploaded materials that teachers can access during lessons.
-                It shows which resources are ready for classroom presentation or use.
-            </p>
-        </div>
-
-        <div>
-            <img src="Casting.png" alt="TEACH casting screen for presenting files and online videos">
-            <h4>Casting</h4>
-            <p>
-                The casting feature allows teachers to present files and online videos for classroom viewing. This
-                supports digital instruction by making materials easier to share with students.
-            </p>
-        </div>
-
-        <div>
-            <img src="Name Picker.png" alt="TEACH name picker feature for random student selection">
-            <h4>Name Picker</h4>
-            <p>
-                The name picker randomly selects students from the class roster. This can be used for recitation,
-                participation, activities, or classroom engagement.
-            </p>
-        </div>
-
-        <div>
-            <img src="Countdown Timer.png" alt="TEACH countdown timer feature for classroom activities">
-            <h4>Countdown Timer</h4>
-            <p>
-                The countdown timer provides a visual timer that can be used during classroom activities. It helps
-                students stay aware of the remaining time for a task.
-            </p>
-        </div>
-
-        <div>
-            <img src="Ranking System.png" alt="TEACH ranking system screen showing student rankings">
-            <h4>Ranking System</h4>
-            <p>
-                The ranking system displays student rankings based on points or performance records. This helps
-                teachers monitor participation, behavior, and class performance in a clear visual format.
-            </p>
-        </div>
-
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="teach.html">TEACH Project</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-</div>
+  </header>
 
+  <section class="hero">
+    <div class="hero-content">
+      <h1>TEACH: <span class="hero-highlight">Classroom Management System</span></h1>
+      <p>
+        A local-first classroom management platform designed to help teachers manage behavior,
+        class records, student information, and classroom activities even when internet access is unreliable.
+      </p>
+
+      <div class="button-group">
+        <a class="btn btn-primary" href="#demo">Watch Demo</a>
+        <a class="btn btn-secondary" href="#screenshots">View Screenshots</a>
+        <a class="btn btn-secondary" href="https://github.com/gilbertmtanofficial-gif/TEACH-Classroom-Management-System" target="_blank" rel="noopener noreferrer">View GitHub Repo</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="section-card">
+      <h2 class="section-title">Project Overview</h2>
+      <p class="section-subtitle">
+        TEACH was developed as a capstone project focused on solving classroom management challenges caused by unstable internet connectivity.
+        The system emphasizes availability, usability, and practical classroom workflows.
+      </p>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Problem Statement</h3>
+          <p>
+            Many classrooms experience unreliable internet connectivity, making cloud-dependent tools difficult to use consistently.
+            Teachers often struggle with real-time data entry, behavior tracking, and access to student records when an internet connection
+            cannot be guaranteed. TEACH addresses this issue by supporting local-first access and dependable classroom data management.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Solution</h3>
+          <p>
+            TEACH provides a classroom management platform that supports essential teaching workflows such as class roster management,
+            behavior tracking, learning material access, student ranking, casting, and classroom activity tools. Its local-first design
+            helps teachers continue using the system even when internet access is unreliable.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <p>Gilbert Tan &copy; 2024</p>
-    </footer>
-</body>
-</html>
+    <section class="section-card">
+      <h2 class="section-title">My Role & Work</h2>
+      <p class="section-subtitle">
+        I independently worked on TEACH from planning and system design through development, testing, deployment, and portfolio documentation.
+      </p>
+
+      <div class="card">
+        <ul>
+          <li><strong>Sole Full-Stack Developer:</strong> Independently designed, developed, tested, and deployed the TEACH application from concept to implementation.</li>
+          <li><strong>Project Planning & System Design:</strong> Defined the project goals, core features, user workflows, and overall system architecture based on the need for a reliable classroom management tool.</li>
+          <li><strong>Local-First Architecture:</strong> Designed the application to support reliable use even when internet connectivity is limited or unavailable, helping teachers continue classroom tasks without disruption.</li>
+          <li><strong>Front-End Development:</strong> Built the user interface with a focus on simplicity, responsiveness, and ease of use for teachers managing classroom records and student informati
+
+
+
